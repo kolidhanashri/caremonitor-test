@@ -44,8 +44,8 @@ git clone https://github.com/kolidhanashri/caremonitor-test.git
 cd caremonitor-test
 npm install
 
-### 2. Setup Mock Server (json-server)
-
+**### 2. Setup Mock Server (json-server)
+**
 npm install -g json-server
 
 run command as - 'json-server --watch db.json --port 3000' at root level for watch and connect to server with port 3000
