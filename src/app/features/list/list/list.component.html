@@ -1,0 +1,30 @@
+<div class="list-container">
+  <button routerLink="/dashboard" class="back-btn">⬅ Back to Dashboard</button>
+
+  <h2>Items List</h2>
+
+  <!-- Loading State -->
+  <div *ngIf="loading" class="loading">
+    <mat-spinner diameter="40"></mat-spinner>
+    <p>Loading items...</p>
+  </div>
+
+  <!-- Error State -->
+  <div *ngIf="error" class="error">
+    <p>{{ error }}</p>
+    <button (click)="fetchItems()">Retry</button>
+  </div>
+
+  <!-- Empty State -->
+  <div *ngIf="!loading && items.length === 0 && !error" class="empty">
+    <p>No items available.</p>
+  </div>
+
+  <!-- Success State -->
+  <ul *ngIf="!loading && items.length > 0">
+    <li *ngFor="let item of items">
+      <h3>{{ item.name }}</h3>
+      <p>{{ item.description }}</p>
+    </li>
+  </ul>
+</div>

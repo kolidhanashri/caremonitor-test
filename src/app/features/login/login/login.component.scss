@@ -1,0 +1,30 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-card {
+  padding: 16px;
+  margin: 15% auto;
+  max-width: 500px;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+.mat-spinner {
+  display: block;
+  margin: 0 auto;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}

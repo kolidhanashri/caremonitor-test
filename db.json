@@ -1,0 +1,42 @@
+{
+    "login": [
+        {
+            "email": "test@example.com",
+            "password": "password123",
+            "token": "mock-token-12345"
+        }
+    ],
+    "items": [
+        {
+            "id": 1,
+            "name": "Item One",
+            "description": "This is the first dummy item.",
+            "price": 19.99
+        },
+        {
+            "id": 2,
+            "name": "Item Two",
+            "description": "Second dummy item description.",
+            "price": 29.99
+        },
+        {
+            "id": 3,
+            "name": "Item Three",
+            "description": "Another sample item.",
+            "price": 39.99
+        },
+        {
+            "id": 4,
+            "name": "Item Four",
+            "description": "This is a dummy item for testing.",
+            "price": 49.99
+        },
+        {
+            "id": 5,
+            "name": "Item Five",
+            "description": "Fifth dummy item.",
+            "price": 59.99
+        }
+    ]
+   
+}
