@@ -1,64 +1,53 @@
-<<<<<<< HEAD
-# caremonitor-test
-Angular Test Application
-=======
-# CaremonitorChallenge
+# CareMonitor Angular App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
+This is a demo Angular 19 application implementing authentication, routing, and API integration using `json-server` for mock backend support.
 
-## Development server
+## 🔧 Features
 
-To start a local development server, run:
+- ✅ Login with form validation and error messages
+- ✅ Cookie-based token and user data storage
+- ✅ AuthGuard for protected routes
+- ✅ Dashboard with logout and item list navigation
+- ✅ Item list fetched from `json-server`
+- ✅ Error handling for login failures and API errors
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 📦 Tech Stack
 
-## Code scaffolding
+- **Angular 19**
+- **json-server** for mock backend
+- **ngx-cookie-service** for storing token in cookies
+- **Reactive Forms** for login validation
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 📁 Project Structure
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+src/
+├── app/
+│ ├── core/ # Auth service, guards, interceptors
+│ ├── features/
+│ │ ├── login/
+│ │ ├── dashboard/
+│ │ └── list/
+│ └── shared/
 
-```bash
-ng generate --help
-```
 
-## Building
 
-To build the project run:
+## 🚀 Getting Started
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### 1. Clone the Repository
 
 ```bash
-ng test
-```
+git clone https://github.com/kolidhanashri/caremonitor-test.git
+cd caremonitor-test
+npm install
 
-## Running end-to-end tests
+### 2. Setup Mock Server (json-server)
 
-For end-to-end (e2e) testing, run:
+npm install -g json-server
 
-```bash
-ng e2e
-```
+run command as - 'json-server --watch db.json --port 3000' at root level for watch and connect to server with port 3000
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
->>>>>>> ab8a1d3 (initial commit)
