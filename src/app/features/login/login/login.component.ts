@@ -6,8 +6,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { CommonModule } from '@angular/common';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BrowserModule } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-login',
@@ -33,6 +32,7 @@ export class LoginComponent {
     });
   }
   onSubmit(): void {
+    this.loginForm.markAllAsTouched(); // Mark all fields as touched to show validation errors
     if (this.loginForm.invalid) {
       this.error = 'Please fill in all required fields correctly.';
       return;
